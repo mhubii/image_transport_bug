@@ -15,7 +15,7 @@ ros2 run tmp tmp
 Can be mitigated by building `image_common` from source, ie
 ```shell
 cd src && \
-git clone https://github.com/ros-perception/image_common.git --branch foxy && cd .. && \
-colcon build
+git clone -b foxy https://github.com/ros-perception/image_common.git && cd .. && \
+colcon build --allow-overriding image_transport
 ```
 Then, re-run.
