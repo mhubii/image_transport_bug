@@ -10,8 +10,9 @@ colcon build
 source install/setup.bash && \
 ros2 run tmp tmp
 ```
-- Expected output: [tmp_node]: N subscriptions: 1
-- Actual output: [tmp_node]: N subscriptions: 0
+- Expected output: `[tmp_node]: N subscriptions: 1`
+- Actual output: `[tmp_node]: N subscriptions: 0`
+
 Can be mitigated by building `image_common` from source, ie
 ```shell
 cd src && \
